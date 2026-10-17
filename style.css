@@ -50,7 +50,7 @@ main{padding-bottom:calc(175px + env(safe-area-inset-bottom))!important}
 .studio-quick .studio-ro{background:linear-gradient(125deg,#16151a,#24232a);border-color:#49434d}
 .studio-quick .studio-main,.studio-quick .studio-sub{position:static!important;inset:auto!important;right:auto!important;top:auto!important;transform:none!important;width:auto;height:auto;background:none;border:0;border-radius:0;display:block;max-width:100%;text-align:left;overflow-wrap:normal;white-space:nowrap}
 .studio-quick .studio-main{color:#f5f2f3;font-weight:900;line-height:1;letter-spacing:-2px;font-size:clamp(43px,12vw,65px);text-shadow:0 2px 10px #0005}
-.studio-quick .studio-b81-mark{font-weight:950;letter-spacing:-3px;color:#f4f2f2}
+.studio-quick .studio-drinks-mark{font-weight:950;letter-spacing:-3px;color:#f4f2f2}
 .studio-quick .studio-ro .studio-main{font-size:clamp(22px,6.5vw,40px);letter-spacing:-1.2px;font-weight:850}
 .studio-quick .studio-sub{font-size:clamp(9px,2.7vw,12px);line-height:1.4;letter-spacing:1.2px;font-weight:600;color:var(--pink);margin-top:12px}
 .studio-quick .studio-arrow{position:absolute!important;right:16px!important;top:50%!important;transform:translateY(-50%)!important;width:36px!important;height:36px!important;display:grid!important;place-items:center!important;background:var(--pink)!important;border-radius:50%!important;color:#141414!important;font-size:23px!important;margin:0!important}
@@ -104,3 +104,15 @@ main{padding-top:0!important;padding-bottom:calc(125px + env(safe-area-inset-bot
 .drink-summary{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:15px 0 24px}.drink-summary>div{background:#142224;border:1px solid #2a4b4c;border-radius:15px;padding:16px;display:flex;flex-direction:column;gap:5px}.drink-summary small{color:#a9c2c1;font-size:11px}.drink-summary strong{font-size:31px;color:#eaf7f6}
 .drink-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.drink-tile{min-width:0;border:1px solid #2b4547;background:linear-gradient(145deg,#182629,#101617);border-radius:15px;padding:15px 5px 12px;color:#f5f7f6;display:flex;align-items:center;flex-direction:column;gap:8px;cursor:pointer}.drink-tile:active{transform:scale(.97)}.drink-illustration{font-size:39px;line-height:1.3}.drink-tile strong{text-align:center;font-size:12px;min-height:30px;line-height:1.2}.drink-tile small{font-size:10px;color:#b3c6c5}.drink-add{font-size:9px;color:#65c5c2;font-weight:800;letter-spacing:.3px}
 .drink-entry{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid #304042;font-size:13px}.drink-entry:last-child{border-bottom:0}.drink-entry small{display:block;color:#99a8a9;font-size:10px}.drink-remove{background:transparent;border:0;color:#b2c9c9;padding:4px 8px}.drink-note{color:#91a4a5;font-size:12px;line-height:1.5;margin:18px 0 25px}
+
+/* AP session cards: unified type scale and discreet editorial artwork */
+.studio-quick #open-drinks,.studio-quick .studio-ro{background-position:center!important;background-size:cover!important;min-height:154px}
+.studio-quick #open-drinks{background-image:linear-gradient(90deg,#071113 0%,#0b1b1df5 39%,#0b1b1d15 100%),url('drinks-art.svg')!important}
+.studio-quick .studio-ro{background-image:linear-gradient(90deg,#071113 0%,#0b1b1df5 39%,#0b1b1d15 100%),url('soho-art.svg')!important}
+.studio-quick #open-drinks::before,.studio-quick .studio-ro::before{background:none!important}
+.studio-quick #open-drinks .studio-main,.studio-quick .studio-ro .studio-main{font-size:clamp(36px,10vw,56px)!important;letter-spacing:-2px!important;font-weight:950!important}
+.studio-quick #open-drinks .studio-sub,.studio-quick .studio-ro .studio-sub{font-size:clamp(11px,2.9vw,13px)!important;letter-spacing:.5px!important;color:#d0d6d2!important;font-weight:500!important}
+.studio-quick .studio-main,.studio-quick .studio-sub,.studio-quick .drink-home-count{z-index:1}
+.studio-quick .studio-arrow{z-index:2}
+.studio-quick #open-drinks{padding-bottom:39px}
+@media(max-width:360px){.studio-quick #open-drinks .studio-main,.studio-quick .studio-ro .studio-main{font-size:35px!important}}

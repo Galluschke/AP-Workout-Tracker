@@ -132,3 +132,6 @@ main{padding-top:0!important;padding-bottom:calc(125px + env(safe-area-inset-bot
 .food-royal{background-image:linear-gradient(90deg,#081415 0%,#0b1d20ed 44%,#0b1d2010 100%),url('grill-royal-art.svg')}
 .food-current{margin:10px 0 22px}.food-current h2{font-size:30px;letter-spacing:-1px;margin:8px 0}.food-current p{color:#b0c4c1;font-size:12px;line-height:1.5}
 .food-grid{display:grid;gap:9px}.food-tile{display:flex;align-items:center;gap:14px;width:100%;border:1px solid #2b4547;background:linear-gradient(145deg,#182629,#101617);border-radius:13px;padding:12px 15px;color:#f5f7f6;text-align:left;cursor:pointer}.food-tile:active{transform:scale(.99)}.food-illustration{font-size:29px;width:40px;text-align:center}.food-item-info{display:flex;flex-direction:column;gap:5px;flex:1;min-width:0}.food-item-info strong{font-size:14px}.food-item-info small{font-size:11px;color:#9cb9b7}.food-plus{font-size:23px;color:#70c8c5;font-weight:600}
+
+/* AP banner proportion correction: native image aspect ratio 2039 x 771 */
+.home-cover::before{aspect-ratio:2039 / 771!important;background-image:url("ap-portrait-banner.jpg?v=20261017-proportion")!important;background-size:contain!important;background-position:center top!important;background-repeat:no-repeat!important}

@@ -92,3 +92,6 @@ main{padding-top:0!important;padding-bottom:calc(125px + env(safe-area-inset-bot
 .studio-quick button::before{background:linear-gradient(100deg,#081011eb 0%,#101b1cbb 55%,#123b3d75 100%)}
 .hero{background:linear-gradient(115deg,#10191a,#173b3c)}
 .brand-icon{background-size:contain;background-position:center;background-repeat:no-repeat}
+
+/* AP Edition: text additions, no layout redesign */
+.studio-intro{font-size:13px;color:var(--muted);margin:5px 0 12px}.studio-title{display:block}.studio-title h2{margin:0}.plan-intro{font-size:12px;color:var(--muted);margin:5px 0 8px}
